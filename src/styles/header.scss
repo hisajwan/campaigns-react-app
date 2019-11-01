@@ -1,0 +1,23 @@
+@import "./colors.scss";
+
+.app-header {
+  background: $blue;
+  height: 80px;
+  color: white;
+
+  & > .app-header-logo {
+    padding: 0px 10vw;
+    & > div {
+      span:first-child {
+        color: white;
+        font-size: 18px;
+      }
+      span:last-child {
+        color: $green1;
+        line-height: 0.2;
+        font-size: 12px;
+        filter: brightness(1.5);
+      }
+    }
+  }
+}

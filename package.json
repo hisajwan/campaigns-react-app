@@ -1,11 +1,19 @@
 {
   "name": "campaigns",
+  "homepage": "http://hsajwan.github.io/campaigns-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "gh-pages": "^2.1.1"
   }
 }
