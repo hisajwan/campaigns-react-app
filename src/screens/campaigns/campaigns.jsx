@@ -24,7 +24,7 @@ class Campaigns extends Component {
     this.modalRef = React.createRef();
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.setState({ ...this.state, totalCampaigns: nextProps.campaigns }, () =>
       this.showSelectedMenuData()
     );
@@ -59,7 +59,6 @@ class Campaigns extends Component {
         });
         break;
       case "Live Campaigns":
-        console.log("fsad");
         campaignsToShow = this.state.totalCampaigns.data.filter(campaigns => {
           let dateToday = this.getDateformatted(currentTime);
           let campaignDate = this.getDateformatted(campaigns.createdOn);
@@ -74,6 +73,9 @@ class Campaigns extends Component {
             return campaigns;
           }
         });
+        break;
+      default:
+        campaignsToShow = [];
         break;
     }
     this.setState({

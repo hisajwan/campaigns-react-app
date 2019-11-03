@@ -8,12 +8,18 @@ const initialState = {
 };
 
 const campaignReducer = (state = initialState, action) => {
-  console.log("reducer");
   switch (action.type) {
     case GET_CAMPAIGN_DATA_ASYNC:
       return { ...action.payload };
     case SET_CAMPAIGN_DATA_ASYNC:
-      return { ...action.payload };
+      const newData = state.data.map(oldData => {
+        if (oldData.name === action.payload.name) {
+          return action.payload;
+        } else {
+          return oldData;
+        }
+      });
+      return { data: newData };
     default:
       return { ...state };
   }
