@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/campaigns-react-app/static/css/main.8a9ed375.chunk.css",
+    "main.js": "/campaigns-react-app/static/js/main.726d147a.chunk.js",
+    "main.js.map": "/campaigns-react-app/static/js/main.726d147a.chunk.js.map",
+    "runtime~main.js": "/campaigns-react-app/static/js/runtime~main.fe6c0071.js",
+    "runtime~main.js.map": "/campaigns-react-app/static/js/runtime~main.fe6c0071.js.map",
+    "static/css/2.cedc9c11.chunk.css": "/campaigns-react-app/static/css/2.cedc9c11.chunk.css",
+    "static/js/2.73bf0873.chunk.js": "/campaigns-react-app/static/js/2.73bf0873.chunk.js",
+    "static/js/2.73bf0873.chunk.js.map": "/campaigns-react-app/static/js/2.73bf0873.chunk.js.map",
+    "index.html": "/campaigns-react-app/index.html",
+    "precache-manifest.c0f2215a261c8d150c1027f3884d7657.js": "/campaigns-react-app/precache-manifest.c0f2215a261c8d150c1027f3884d7657.js",
+    "service-worker.js": "/campaigns-react-app/service-worker.js",
+    "static/css/2.cedc9c11.chunk.css.map": "/campaigns-react-app/static/css/2.cedc9c11.chunk.css.map",
+    "static/css/main.8a9ed375.chunk.css.map": "/campaigns-react-app/static/css/main.8a9ed375.chunk.css.map",
+    "static/media/bluestacks_logo_cut.png": "/campaigns-react-app/static/media/bluestacks_logo_cut.965fccbf.png",
+    "static/media/garena.png": "/campaigns-react-app/static/media/garena.7173cfe7.png",
+    "static/media/mancala_mix.png": "/campaigns-react-app/static/media/mancala_mix.977ecf7b.png",
+    "static/media/mole_slayer.png": "/campaigns-react-app/static/media/mole_slayer.3ecfc5bd.png",
+    "static/media/mortalcombat.png": "/campaigns-react-app/static/media/mortalcombat.90640a87.png",
+    "static/media/needforspeed.png": "/campaigns-react-app/static/media/needforspeed.c161ba4a.png",
+    "static/media/pubg.png": "/campaigns-react-app/static/media/pubg.e51f42c3.png",
+    "static/media/super_jewels_quest.png": "/campaigns-react-app/static/media/super_jewels_quest.8a4d68db.png"
+  }
+}
