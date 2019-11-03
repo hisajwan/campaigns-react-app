@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-import "../styles/menuBar.scss";
+import React from "react";
+import "./menuBar.scss";
 function MenuBar(props) {
-  const [menu] = useState([...props.menuData]);
-
   const getMenuBar = () => {
-    return menu.map((m, index) => {
+    return props.menuData.map((m, index) => {
       let menuClass;
       if (m.selected) {
         menuClass = "menu-selected";

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import AppHeader from "./components/header";
+import AppHeader from "./components/header/header";
 import { HashRouter as Router } from "react-router-dom";
 import Routes from "./routes";
 function App() {

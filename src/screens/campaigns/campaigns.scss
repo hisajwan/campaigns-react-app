@@ -1,0 +1,12 @@
+@import "../../styles/colors.scss";
+@import "../../styles/common.scss";
+
+.campaigns {
+  & > main {
+    h1 {
+      font-weight: bold;
+      font-size: 2.9rem;
+      color: $blue-medium;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
-import Campaigns from "../screens/campaigns";
+import Campaigns from "../screens/campaigns/campaigns";
 const Routes = () => {
   return (
     <React.Fragment>

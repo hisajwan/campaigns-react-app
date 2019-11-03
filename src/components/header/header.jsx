@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/header.scss";
-import logo from "../assets/bluestacks_logo_cut.png";
+import "./header.scss";
+import logo from "../../assets/bluestacks_logo_cut.png";
 function AppHeader() {
   return (
     <React.Fragment>

@@ -1,0 +1,56 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/common.scss";
+
+.campaigns-table {
+  overflow: auto;
+  margin-top: 2.5rem;
+  .grid-container {
+    width: 100%;
+    font-weight: normal;
+    background: $grey-3;
+    color: $grey-2;
+    min-width: 750px;
+    .grid-row {
+      @extend .campaigns-table-grid;
+    }
+    .grid-header {
+      padding: 0px 15px;
+      .grid-row.grid-header-row {
+        & > div {
+          font-size: 16px;
+          font-weight: bold;
+          padding: 12px 0px;
+        }
+      }
+    }
+    .grid-body {
+      font-size: 14px;
+      background: white;
+      padding: 0px 15px;
+      .grid-row.grid-body-row {
+        border-bottom: 1px solid $grey-3;
+        & > div {
+          padding: 20px 0px;
+          .grid-large-font {
+            font-size: 16px;
+          }
+
+          a {
+            color: inherit;
+          }
+
+          .grid-light-color {
+            opacity: 0.7;
+          }
+        }
+      }
+      .grid-row.grid-body-row:last-child {
+        border-bottom: 0px;
+      }
+    }
+  }
+}
+.campaigns-table-grid {
+  display: grid;
+  grid-template-columns: 15% 30% 17% 38%;
+}
