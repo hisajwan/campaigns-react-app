@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d382f48c4ae1b509bd7bcf08baa0db40",
+    "revision": "e7b7dfe0450dd0aa5ede65aacaca37a1",
     "url": "/campaigns-react-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/campaigns-react-app/static/css/2.cedc9c11.chunk.css"
   },
   {
-    "revision": "26238e3939eec3073936",
+    "revision": "daf9ad8b3e6721a66915",
     "url": "/campaigns-react-app/static/css/main.8a9ed375.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/campaigns-react-app/static/js/2.73bf0873.chunk.js"
   },
   {
-    "revision": "26238e3939eec3073936",
-    "url": "/campaigns-react-app/static/js/main.726d147a.chunk.js"
+    "revision": "daf9ad8b3e6721a66915",
+    "url": "/campaigns-react-app/static/js/main.330f2bbe.chunk.js"
   },
   {
     "revision": "007cd9ce76c74c522efe",
