@@ -24,7 +24,7 @@ function MenuBar(props) {
   return (
     <React.Fragment>
       <main className="pt-3">
-        <div className="menu-container d-flex">{getMenuBar()}</div>
+        <div className="menu-container d-flex text-center">{getMenuBar()}</div>
       </main>
     </React.Fragment>
   );

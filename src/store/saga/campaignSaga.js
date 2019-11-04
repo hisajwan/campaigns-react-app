@@ -8,7 +8,17 @@ import {
 import { campaignsData } from "../../assets/mockData/campaignsData";
 
 function* getCampaignWorker(action) {
-  yield put({ type: GET_CAMPAIGN_DATA_ASYNC, payload: campaignsData });
+  // Start : To show like DB, if in session than will render that data otherwise mockData or API CALL
+  const serializedState = sessionStorage.getItem("state");
+  const state = JSON.parse(serializedState);
+  let campaigns;
+  const campData = state.campaigns;
+  if (campData && campData.data && campData.data.length > 0) {
+    campaigns = campData;
+  } else {
+    campaigns = campaignsData;
+  }
+  yield put({ type: GET_CAMPAIGN_DATA_ASYNC, payload: campaigns });
 }
 
 export function* getCampaignWatcher() {

@@ -6,6 +6,11 @@ import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import { Provider } from "react-redux";
 import store from "./store";
+import { addLocaleData } from "react-intl";
+import en from "react-intl/locale-data/en";
+import hi from "react-intl/locale-data/hi";
+addLocaleData(en);
+addLocaleData(hi);
 ReactDOM.render(
   <Provider store={store}>
     <App />

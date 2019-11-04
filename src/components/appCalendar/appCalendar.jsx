@@ -4,6 +4,7 @@ import Calendar from "react-calendar";
 import { Modal } from "react-bootstrap";
 import { getImageURL } from "../../util/util";
 import { setCampaigns } from "../../store/actions/campaignAction";
+import { FormattedMessage } from "react-intl";
 
 const AppCalendar = React.memo(
   forwardRef((props, ref) => {
@@ -73,10 +74,16 @@ const AppCalendar = React.memo(
             className="btn btn-outline-success"
             onClick={() => rescheduleCampaign()}
           >
-            Reschedule
+            <FormattedMessage
+              id="app.calendar_reschedule_btn"
+              defaultMessage="Reschedule"
+            ></FormattedMessage>
           </button>
           <button className="btn btn-outline-secondary" onClick={handleClose}>
-            Close
+            <FormattedMessage
+              id="app.close_btn"
+              defaultMessage="Close"
+            ></FormattedMessage>
           </button>
         </Modal.Footer>
       </Modal>

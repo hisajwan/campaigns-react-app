@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
-import "./campaignTable.scss";
+import "./cardsContainer.scss";
 import AppCalendar from "../../../../components/appCalendar/appCalendar";
 import { FormattedMessage } from "react-intl";
-// import { FormattedHTMLMessage, FormattedMessage } from "react-intl";
-const CampaignTable = ({
-  tableData,
+const CardsContainer = ({
+  cardsData,
   showPricing,
   selectedCampaignType,
   children
@@ -51,34 +50,66 @@ const CampaignTable = ({
 
   return (
     <React.Fragment>
-      <div className="campaigns-table-container shadow">
-        <div className="grid-row grid-header-row">{children}</div>
-        {tableData.map((c, index) => (
-          <div className="grid-row grid-body-row" key={index}>
-            <div>
-              <div className="grid-large-font">
-                {getCampaignDate(c.createdOn)}
+      <div className="campaigns-cards-container d-flex justify-content-between flex-wrap mt-4">
+        {cardsData.map((c, index) => (
+          <div
+            className="d-flex flex-column justify-content-between shadow campaigns-cards p-4 flex-fill flex-wrap"
+            key={index}
+          >
+            <div className="d-flex flex-fill justify-content-between flex-wrap mb-3">
+              <div className="d-flex justify-content-start mr-3 mb-2">
+                <div className="d-flex align-items-start">
+                  <div>
+                    <img
+                      src={require("../../../../assets/icons/" + c.image_url)}
+                      alt="App"
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                  <div className="ml-2">
+                    <div className="grid-large-font">{c.name}</div>
+                    <div className="font-italic grid-light-color">
+                      {c.region}
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="font-italic grid-light-color">
-                {getDateDiff(c.createdOn)}
+              <div className="d-flex flex-column justify-content-between">
+                <div>
+                  <div className="grid-large-font">
+                    {getCampaignDate(c.createdOn)}
+                  </div>
+                  <div className="font-italic grid-light-color">
+                    {getDateDiff(c.createdOn)}
+                  </div>
+                </div>
+                <div className="d-flex align-items-center flex-wrap mt-2">
+                  <div
+                    onClick={() => calendarRef.current.handleShow(c)}
+                    className="cursor-pointer mr-2"
+                  >
+                    <img
+                      src={require("../../../../assets/icons/calendar.png")}
+                      alt="Calendar"
+                      width="25px"
+                      height="25px"
+                    />
+                  </div>
+                  <div
+                    onClick={() => calendarRef.current.handleShow(c)}
+                    className="cursor-pointer"
+                  >
+                    <FormattedMessage
+                      id="app.grid_schedule_again"
+                      defaultMessage="Schedule Again"
+                    ></FormattedMessage>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="d-flex align-items-center">
-              <div>
-                <img
-                  src={require("../../../../assets/icons/" + c.image_url)}
-                  alt="App"
-                  width="40px"
-                  height="40px"
-                />
-              </div>
-              <div className="ml-2">
-                <div className="grid-large-font">{c.name}</div>
-                <div className="font-italic grid-light-color">{c.region}</div>
-              </div>
-            </div>
-            <div className="d-flex align-items-center flex-wrap">
-              <div className="d-flex align-items-center flex-wrap">
+            <div className="check-detail d-flex align-items-center justify-content-between flex-wrap mt-2 flex-fill">
+              <div className="d-flex align-items-center flex-wrap mt-2">
                 <div
                   className="cursor-pointer mr-2"
                   onClick={() => showPricing(c)}
@@ -97,9 +128,10 @@ const CampaignTable = ({
                   ></FormattedMessage>
                 </div>
               </div>
-            </div>
-            <div className="d-flex align-items-center justify-content-between">
-              <a href={c.csv} className="d-flex align-items-center flex-wrap">
+              <a
+                href={c.csv}
+                className="d-flex align-items-center flex-wrap mt-2 mx-3"
+              >
                 <div className="cursor-pointer mr-2">
                   <img
                     src={require("../../../../assets/icons/file.png")}
@@ -117,7 +149,7 @@ const CampaignTable = ({
               </a>
               <a
                 href={c.report}
-                className="d-flex align-items-center flex-wrap mx-2"
+                className="d-flex align-items-center flex-wrap mt-2"
               >
                 <div className="cursor-pointer mr-2">
                   <img
@@ -134,33 +166,11 @@ const CampaignTable = ({
                   ></FormattedMessage>
                 </div>
               </a>
-              <div className="d-flex align-items-center flex-wrap">
-                <div
-                  onClick={() => calendarRef.current.handleShow(c)}
-                  className="cursor-pointer mr-2"
-                >
-                  <img
-                    src={require("../../../../assets/icons/calendar.png")}
-                    alt="Calendar"
-                    width="25px"
-                    height="25px"
-                  />
-                </div>
-                <div
-                  onClick={() => calendarRef.current.handleShow(c)}
-                  className="cursor-pointer"
-                >
-                  <FormattedMessage
-                    id="app.grid_schedule_again"
-                    defaultMessage="Schedule Again"
-                  ></FormattedMessage>
-                </div>
-              </div>
             </div>
           </div>
         ))}
       </div>
-      {tableData.length < 1 && (
+      {cardsData.length < 1 && (
         <h3 className="text-center p-4">No {selectedCampaignType[0].name}</h3>
       )}
       <AppCalendar ref={calendarRef} />
@@ -168,4 +178,4 @@ const CampaignTable = ({
   );
 };
 
-export default CampaignTable;
+export default CardsContainer;

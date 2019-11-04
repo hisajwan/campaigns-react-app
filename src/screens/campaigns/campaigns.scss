@@ -1,12 +1,39 @@
 @import "../../styles/colors.scss";
-@import "../../styles/common.scss";
+@import "../../styles/mixins.scss";
 
 .campaigns {
   & > main {
-    h1 {
+    // .cards-container {
+    //   display: block;
+    // }
+
+    // .campaign-table {
+    //   display: none;
+    // }
+
+    // @include medium {
+    //   .cards-container {
+    //     display: block;
+    //   }
+    //   .campaign-table {
+    //     display: none;
+    //   }
+    // }
+
+    @include small {
+      word-wrap: break-all;
+      .page-header {
+        font-size: 2rem;
+      }
+    }
+    .page-header {
       font-weight: bold;
       font-size: 2.9rem;
       color: $blue-medium;
+      @include small {
+        font-size: 2rem;
+        word-wrap: break-all;
+      }
     }
   }
 }

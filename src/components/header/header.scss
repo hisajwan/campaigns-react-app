@@ -1,12 +1,16 @@
 @import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
 
 .app-header {
   background: $blue;
   height: 80px;
   color: white;
-
+  padding: 0px 7vw;
+  @include small {
+    height: auto;
+    padding: 10px 10vw;
+  }
   & > .app-header-logo {
-    padding: 0px 10vw;
     & > div {
       span:first-child {
         color: white;
