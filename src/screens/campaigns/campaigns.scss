@@ -3,22 +3,17 @@
 
 .campaigns {
   & > main {
-    // .cards-container {
-    //   display: block;
-    // }
-
-    // .campaign-table {
-    //   display: none;
-    // }
-
-    // @include medium {
-    //   .cards-container {
-    //     display: block;
-    //   }
-    //   .campaign-table {
-    //     display: none;
-    //   }
-    // }
+    .cards-container {
+      display: none;
+    }
+    @include small {
+      .cards-container {
+        display: block;
+      }
+      .campaign-table {
+        display: none;
+      }
+    }
 
     @include small {
       word-wrap: break-all;

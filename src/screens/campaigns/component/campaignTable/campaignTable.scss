@@ -47,6 +47,9 @@
 
 .campaigns-table-grid {
   padding: 0px 2rem;
+  @include medium {
+    padding: 0px 1rem;
+  }
   display: grid;
   grid-template-columns: 15% 30% 12% auto;
   grid-gap: 10px;

@@ -6,9 +6,11 @@
   height: 80px;
   color: white;
   padding: 0px 7vw;
+  @include medium {
+    padding: 10px 5vw;
+  }
   @include small {
     height: auto;
-    padding: 10px 10vw;
   }
   & > .app-header-logo {
     & > div {
