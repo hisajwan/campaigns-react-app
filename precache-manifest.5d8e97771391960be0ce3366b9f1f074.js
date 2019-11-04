@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7b7dfe0450dd0aa5ede65aacaca37a1",
+    "revision": "e419ce974c089b9477b9316223581b5c",
     "url": "/campaigns-react-app/index.html"
   },
   {
-    "revision": "d2c0aa1110df1f80c952",
-    "url": "/campaigns-react-app/static/css/2.cedc9c11.chunk.css"
+    "revision": "0b9d19239bcda8eccbb3",
+    "url": "/campaigns-react-app/static/css/2.aefef1dc.chunk.css"
   },
   {
-    "revision": "daf9ad8b3e6721a66915",
-    "url": "/campaigns-react-app/static/css/main.8a9ed375.chunk.css"
+    "revision": "e8d936d110ba51cb8f17",
+    "url": "/campaigns-react-app/static/css/main.2dda7b15.chunk.css"
   },
   {
-    "revision": "d2c0aa1110df1f80c952",
-    "url": "/campaigns-react-app/static/js/2.73bf0873.chunk.js"
+    "revision": "0b9d19239bcda8eccbb3",
+    "url": "/campaigns-react-app/static/js/2.bb7813cb.chunk.js"
   },
   {
-    "revision": "daf9ad8b3e6721a66915",
-    "url": "/campaigns-react-app/static/js/main.330f2bbe.chunk.js"
+    "revision": "e8d936d110ba51cb8f17",
+    "url": "/campaigns-react-app/static/js/main.5dd9a746.chunk.js"
   },
   {
     "revision": "007cd9ce76c74c522efe",
