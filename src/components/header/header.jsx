@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import "./header.scss";
 import logo from "../../assets/bluestacks_logo_cut.png";
 import { connect } from "react-redux";
-import { SET_LOCALE_LANG_ASYNC } from "../../store/actions/types";
+import { SET_LOCALE_LANG } from "../../store/actions/types";
 import { FormattedMessage } from "react-intl";
 function AppHeader(props) {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ function AppHeader(props) {
           <select
             className="form-control cursor-pointer"
             onChange={e =>
-              dispatch({ type: SET_LOCALE_LANG_ASYNC, payload: e.target.value })
+              dispatch({ type: SET_LOCALE_LANG, payload: e.target.value })
             }
             value={props.lang.val}
           >
