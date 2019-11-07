@@ -18,7 +18,6 @@ function App(props) {
     </React.Fragment>
   );
 }
-
 const mapStateToProps = state => ({
   lang: state.language
 });
@@ -27,3 +26,5 @@ export default connect(
   mapStateToProps,
   {}
 )(App);
+
+// merge and push check
